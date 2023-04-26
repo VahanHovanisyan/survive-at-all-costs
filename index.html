@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="pc game survive at any cost.">
     <link rel="stylesheet" href="css/main.min.css">
     <title>Document</title>
   </head>
@@ -61,9 +61,9 @@
               <div class="swiper-slide"></div>
             </div>
             <div class="box container"><a class="first__arrow-down text" href="#" data-goto=".second" data-lang="firstBtnDown">The story</a>
-              <button class="swiper-button-prev btn-reset"></button>
+              <button class="swiper-button-prev btn-reset" aria-label="previous slide"></button>
               <div class="swiper-pagination"> </div>
-              <button class="swiper-button-next btn-reset"></button>
+              <button class="swiper-button-next btn-reset" aria-label="next slide"></button>
             </div>
           </div>
           <div class="first__container container">
@@ -83,18 +83,34 @@
             </div>
             <div class="second__slider-cards">
               <div class="swiper-wrapper"> 
-                <div class="swiper-slide"><img src="img/bg-image1.jpg" alt="team squad before the start"></div>
-                <div class="swiper-slide"><img src="img/bg-image2.jpg" alt="swamp"></div>
-                <div class="swiper-slide"><img src="img/bg-image3.jpg" alt="game character"></div>
-                <div class="swiper-slide"><img src="img/bg-image4.jpg" alt="temple"></div>
+                <div class="swiper-slide">
+                  <picture> 
+                    <source srcset="img/bg-image1.webp"><img src="img/bg-image1.jpg" alt="team squad before the start">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture> 
+                    <source srcset="img/bg-image2.webp"><img src="img/bg-image2.jpg" alt="swamp">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture> 
+                    <source srcset="img/bg-image3.webp"><img src="img/bg-image3.jpg" alt="game character">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture> 
+                    <source srcset="img/bg-image4.webp"><img src="img/bg-image4.jpg" alt="temple">
+                  </picture>
+                </div>
               </div>
-              <button class="swiper-button-prev btn-reset">
+              <button class="swiper-button-prev btn-reset" aria-label="previous slide">
                 <svg>
                   <use xlink:href="img/sprite.svg#arrow-slide"></use>
                 </svg>
               </button>
               <div class="swiper-pagination"> </div>
-              <button class="swiper-button-next btn-reset">
+              <button class="swiper-button-next btn-reset" aria-label="next slide">
                 <svg>
                   <use xlink:href="img/sprite.svg#arrow-slide"></use>
                 </svg>
@@ -167,21 +183,21 @@
             <div class="quotes__press press-quotes">
               <blockquote class="press-quotes__item">
                 <div class="press-quotes__box"><img class="press-quotes__img" src="img/quote-avatar.jpg" alt="selfie of a man with glasses in the desert">
-                  <cite class="press-quotes__name" data-lang="quotesFirstName">Evan Lahti</cite><span class="press-quotes__works" data-lang="quotesFirstCareer">PC Gamer</span><a class="press-quotes__icon icon-twitter" href="http://twitter.com" target="_blank" rel="noopener noreferrer"> </a>
+                  <cite class="press-quotes__name" data-lang="quotesFirstName">Evan Lahti</cite><span class="press-quotes__works" data-lang="quotesFirstCareer">PC Gamer</span><a class="press-quotes__icon icon-twitter" href="http://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="twitter icon"> </a>
                 </div>
                 <q class="press-quotes__quote text" data-lang="quotesFirstQuote">One of my gaming highlights of the year.</q>
                 <time class="press-quotes__time" datetime="2018-10-18 19:00" data-lang="quotesFirstDate">October 18 2018</time>
               </blockquote>
               <blockquote class="press-quotes__item">
                 <div class="press-quotes__box"> <img class="press-quotes__img" src="img/quote-avatar-women.jpg" alt="cool of a beautiful dark-skinned girl with curly hair">
-                  <cite class="press-quotes__name" data-lang="quotesSecondName">Jada Griffin </cite><span class="press-quotes__works" data-lang="quotesSecondCareer">Nerdreactor</span><a class="press-quotes__icon icon-twitter" href="http://twitter.com" target="_blank" rel="noopener noreferrer"> </a>
+                  <cite class="press-quotes__name" data-lang="quotesSecondName">Jada Griffin </cite><span class="press-quotes__works" data-lang="quotesSecondCareer">Nerdreactor</span><a class="press-quotes__icon icon-twitter" href="http://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="twitter icon"> </a>
                 </div>
                 <q class="press-quotes__quote text" data-lang="quotesSecondQuote">The next big thing in the world of streaming and survival games.</q>
                 <time class="press-quotes__time" datetime="2018-12-21 19:00" data-lang="quotesSecondDate">December 21 2018</time>
               </blockquote>
               <blockquote class="press-quotes__item">
                 <div class="press-quotes__box"><img class="press-quotes__img" src="img/quote-avatar-danc-man.jpg" alt="photo of a black guy dancing on the street">
-                  <cite class="press-quotes__name" data-lang="quotesThirdName">Aaron Williams </cite><span class="press-quotes__works" data-lang="quotesThirdCareer">Uproxx</span><a class="press-quotes__icon icon-twitter" href="http://twitter.com" target="_blank" rel="noopener noreferrer"> </a>
+                  <cite class="press-quotes__name" data-lang="quotesThirdName">Aaron Williams </cite><span class="press-quotes__works" data-lang="quotesThirdCareer">Uproxx</span><a class="press-quotes__icon icon-twitter" href="http://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="twitter icon"> </a>
                 </div>
                 <q class="press-quotes__quote text" data-lang="quotesThirdQuote">Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.</q>
                 <time class="press-quotes__time" datetime="2018-12-24 19:00" data-lang="quotesThirdDate"> December 24 2018</time>
@@ -215,19 +231,19 @@
                 <li class="footer__item"><a class="footer__link menu-link" href="#" data-lang="footerQuotes">quotes</a></li>
               </ul>
               <ul class="socials flex-v-center">
-                <li class="socials__item"><a class="socials__link" href="#">
+                <li class="socials__item"><a class="socials__link" href="#" aria-label="facebook icon">
                     <svg class="socials__icon socials__icon_facebook">
                       <use xlink:href="img/sprite.svg#facebook"></use>
                     </svg></a></li>
-                <li class="socials__item"><a class="socials__link" href="#">
+                <li class="socials__item"><a class="socials__link" href="#" aria-label="twitter icon">
                     <svg class="socials__icon socials__icon_twitter">
                       <use xlink:href="img/sprite.svg#twitter"></use>
                     </svg></a></li>
-                <li class="socials__item"><a class="socials__link" href="#">
+                <li class="socials__item"><a class="socials__link" href="#" aria-label="youtube icon">
                     <svg class="socials__icon socials__icon_youtube"> 
                       <use xlink:href="img/sprite.svg#youtube"></use>
                     </svg></a></li>
-                <li class="socials__item"><a class="socials__link" href="#">
+                <li class="socials__item"><a class="socials__link" href="#" aria-label="twitch icon">
                     <svg class="socials__icon socials__icon_twitch">
                       <use xlink:href="img/sprite.svg#twitch"></use>
                     </svg></a></li>
