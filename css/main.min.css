@@ -809,6 +809,10 @@ a:visited {
     letter-spacing: 2px
 }
 
+.first{
+    padding: 70px 0px 50px 0px;
+}
+
 .first__container {
     position: relative;
     z-index: 1;
@@ -991,7 +995,8 @@ a:visited {
 }
 
 .third {
-    background-image: url(../img/bg-third.jpg)
+    background-image: url(../img/bg-third.jpg);
+    padding: 50px 0px;
 }
 
 .third__container {
@@ -1066,7 +1071,7 @@ a:visited {
 
 .four {
     background-image: url(../img/bg-four.jpg);
-    padding: 2rem 0 0
+    padding: 50px 0
 }
 
 .four__container {
@@ -1084,6 +1089,8 @@ a:visited {
     color: #fff;
     font-size: 30px;
     display: grid;
+    background-color: #00000075;
+    border-radius: 5px;
     grid-template-columns: repeat(2, minmax(140px, 300px));
     grid-template-areas: "one two" "three four" "five five"
 }
@@ -1491,10 +1498,6 @@ a:visited {
 
     .first .swiper-button-prev::after {
         border-right: 5px solid var(--white)
-    }
-
-    .four {
-        min-height: 650px
     }
 }
 
