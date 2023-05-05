@@ -751,6 +751,7 @@ a:visited {
 }
 
 .footer {
+    padding: 30px 0px 20px 0px;
     background-color: #000;
     transition: padding .3s
 }
@@ -760,7 +761,8 @@ a:visited {
 }
 
 .footer__menu {
-    padding: 30px 0;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, .6039215686);
     justify-content: space-between
 }
@@ -778,7 +780,6 @@ a:visited {
     display: flex;
     justify-content: space-between;
     gap: 15px;
-    padding: 20px 0
 }
 
 .footer__copyright {
@@ -1075,8 +1076,14 @@ a:visited {
 }
 
 .four__container {
-    margin: auto
+    width: 100%;
 }
+
+.four__content{
+    margin-bottom: 30px;
+}
+
+
 
 .four__title,
 .quotes__title,
@@ -1085,14 +1092,13 @@ a:visited {
 }
 
 .table {
-    justify-content: center;
+    max-width: 575px;
     color: #fff;
     font-size: 30px;
     display: grid;
     background-color: #00000075;
     border-radius: 5px;
-    grid-template-columns: repeat(2, minmax(140px, 300px));
-    grid-template-areas: "one two" "three four" "five five"
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .table__item {
@@ -1100,24 +1106,12 @@ a:visited {
     border: 1px solid rgba(151, 151, 151, .5137254902)
 }
 
-.table__item:first-child {
-    grid-area: one
-}
-
-.table__item:nth-child(2) {
-    grid-area: two
-}
-
-.table__item:nth-child(3) {
-    grid-area: three
-}
-
-.table__item:nth-child(4) {
-    grid-area: four
+.table__item:nth-child(-n+4) {
+    grid-column: 3 span;
 }
 
 .table__item:last-child {
-    grid-area: five
+    grid-column: 6 span;
 }
 
 .table__title {
@@ -1138,7 +1132,7 @@ a:visited {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     margin: auto;
-    column-gap: 20px
+    column-gap: 30px
 }
 
 .quotes__content {
@@ -1151,10 +1145,9 @@ a:visited {
 
 .press-quotes {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
-    grid-template-areas: ". . . a a a a" "b b b b b b ." ". . . c c c c"
 }
 
 .press-quotes__item {
@@ -1165,51 +1158,50 @@ a:visited {
 }
 
 .press-quotes__item:first-child {
-    grid-area: a
+    grid-column: 2 / 5 span;
 }
 
 .press-quotes__item:nth-child(2) {
-    justify-self: start;
-    grid-area: b
+    grid-column: 5 span;
 }
 
 .press-quotes__item:nth-child(3) {
-    grid-area: c
+    grid-column: 2 / 5 span;
 }
 
 .press-quotes__box {
+    margin-bottom: 20px;
     display: grid;
-    column-gap: 30px;
-    grid-template-rows: 1fr;
-    grid-template-columns: 50px 2fr;
-    grid-template-areas: "img name icon" "img works .";
-    margin-bottom: 20px
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    column-gap: 15px;
 }
 
 .press-quotes__img {
     width: 4rem;
     height: 4rem;
-    grid-area: img;
     border-radius: 50%;
-    box-shadow: 7px 0 0 var(--orange)
+    box-shadow: 7px 0 0 var(--orange);
+    grid-row: 2 span;
 }
 
 .press-quotes__name {
     font-size: 24px;
     line-height: 120%;
     color: var(--orange);
-    grid-area: name
+    grid-column: 3 span;
 }
 
 .press-quotes__works {
-    grid-area: works;
     font-family: Open-Sans;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 120%;
     color: var(--white);
-    opacity: .5
+    opacity: .5;
+    grid-column: 2 / 3 span;
+    grid-row: 2 / 1 span;
 }
 
 .press-quotes__icon {
@@ -1217,9 +1209,8 @@ a:visited {
     justify-self: start;
     align-self: start;
     font-size: 1rem;
-    grid-area: icon;
     color: var(--white);
-    opacity: .3
+    opacity: .3;
 }
 
 .form__input-title,
@@ -1499,6 +1490,7 @@ a:visited {
     .first .swiper-button-prev::after {
         border-right: 5px solid var(--white)
     }
+
 }
 
 @media (max-width:767.98px) {
@@ -1609,6 +1601,18 @@ a:visited {
 
     .subscribe__form {
         flex-direction: column
+    }
+
+    .press-quotes__item:first-child {
+        grid-column: 6 span;
+    }
+    
+    .press-quotes__item:nth-child(2) {
+        grid-column: 6 span;
+    }
+    
+    .press-quotes__item:nth-child(3) {
+        grid-column: 6 span;
     }
 }
 
